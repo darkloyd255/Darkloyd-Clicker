@@ -1,119 +1,74 @@
-<link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
-<div>
-<marquee>Man dies from watching Youtube. "I told him that wasnt good for him", exclaims wife. Fellow scientists are speculating whats underneath Darkloyd's iconic box. guesses include,"Chicken, More boxes, And the unknowable." People around the world are starting to investigate the rumor,"Darkloyd is related to dream." we are currently waiting for a response. rumors are spreading about what happens if you refresh this page, some say it saves your progress, others say otherwise. heres a interview with a person that closed his page, everyone, welcome, Divineprince11,"no, NO, NOOO, AAAAAA, AAAAAA!" </marquee>
-    <title>Darkloyd Clicker | Subscribe!</title>
+<!DOCTYPE html>
 <html>
-    <body>
+<head>
+    <title>Darkloyd Clicker | Subscribe!</title>
+    <link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
+    <style>
+        /* Your existing CSS styles here */
+    </style>
+</head>
+<body>
+    <div>
+        <marquee>Man dies from watching Youtube. "I told him that wasn't good for him," exclaims wife. Fellow scientists are speculating what's underneath Darkloyd's iconic box. Guesses include, "Chicken, More boxes, And the unknowable." People around the world are starting to investigate the rumor, "Darkloyd is related to dream." We are currently waiting for a response. Rumors are spreading about what happens if you refresh this page, some say it saves your progress, others say otherwise. Here's an interview with a person that closed his page, everyone, welcome, Divineprince11, "no, NO, NOOO, AAAAAA, AAAAAA!"</marquee>
         <h1>Darkloyd Clicker</h1>
-        <button class = "dynamic" onclick="clickHandler()">Get money</button>
-        <p class ="big">$: <span id="dollar-value"></span></p>
-        
-        <button  onclick="buy(1)">Buy 1 $PC</button>
-        <button  onclick="buy(10)">Buy 10 $PC</button>
-        <button  onclick="buy(100)">Buy 100 $PC</button>
-        <button  onclick="customBuy()">Buy <input type="number" id="input1"> $pc</button> 
-        <p class ="big">$pc: <span id="pc-value"></span></p>
-        
+        <button class="dynamic" onclick="clickHandler()">Get money</button>
+        <p class="big">$: <span id="dollar-value"></span></p>
+        <button onclick="buy(1)">Buy 1 $PC</button>
+        <button onclick="buy(10)">Buy 10 $PC</button>
+        <button onclick="buy(100)">Buy 100 $PC</button>
+        <button onclick="customBuy()">Buy <input type="number" id="input1"> $pc</button>
+        <p class="big">$pc: <span id="pc-value"></span></p>
         <p>Hi.</p>
         <p>Im darkloyd.</p>
-        <p>im learning JavaScript, so i made this simple game to test my skills.</p>
-        <p>Why do i want to learn this "Complicated" crap?</p>
-        <p>Becuase i want to make awesome things and get a good paying job when im older. Thats why. Its also very fun.</p>
-        <p>Anyways... it would be awesome if you could <a href="https://www.youtube.com/channel/UClM2-mauMh_qF36XmU3qJoQ">Subscribe</a>, becuase its my dream to become at least a "Slightly" popular youtuber!</p>
-        <p>All coding by me UNLESS you count the slight bug fixing Chat GPT helped me out with SLIGHTLY... Btw it REALLY knows EVERYTHING i swear.</p>
-        <p>All of this code was made on a school ChromeBook using the "Text" (not texting) application, which i was surprised to see had formating features for javascript html and css.</p>
-        <p>I taught this to myself using W3 Schools. They REALLY broke it down for me. It makes JavaScript look about 1K times less complicated for me, BUT i am still learning so support me however you can, if you want to...</p>
+        <p>im learning JavaScript, so I made this simple game to test my skills.</p>
+        <p>Why do I want to learn this "Complicated" crap?</p>
+        <p>Because I want to make awesome things and get a good paying job when I'm older. That's why. It's also very fun.</p>
+        <p>Anyways... it would be awesome if you could <a href="https://www.youtube.com/channel/UClM2-mauMh_qF36XmU3qJoQ">Subscribe</a>, because it's my dream to become at least a "Slightly" popular YouTuber!</p>
+        <p>All coding by me UNLESS you count the slight bug fixing Chat GPT helped me out with SLIGHTLY... Btw it REALLY knows EVERYTHING I swear.</p>
+        <p>All of this code was made on a school ChromeBook using the "Text" (not texting) application, which I was surprised to see had formatting features for JavaScript, HTML, and CSS.</p>
+        <p>I taught this to myself using W3 Schools. They REALLY broke it down for me. It makes JavaScript look about 1K times less complicated for me, BUT I am still learning so support me however you can, if you want to...</p>
         <p>Also if you use an auto clicker here it can REALLY get out of hand! XD</p>
-        <p>And yes school computers can have autoclickers in bookmarks if you have github unblocked.</p>
-        
-        <script>
-            
-            var dollarValue = 0;
-            var pcValue = 1;
-            
-            function customBuy(i) {
-             
-                i = document.getElementById("input1").value;
-                if (i > 0) {
-                buy(i)
-            }
-            }
-            function clickHandler() {
-                dollarValue += pcValue;
-                update();
-            }
-            
-            function buy(a) {
-                var pcCost = (pcValue + 1) * 15;
-                if (dollarValue >= a * pcCost) {
-                    dollarValue -= a * pcCost;
-                    pcValue += a * 1;
-                    update();
-                }
-            }
-            
-            function update() {
-                document.getElementById("dollar-value").innerHTML = dollarValue;
-                document.getElementById("pc-value").innerHTML = pcValue;
-               
-               
-                
-            }
-            
-            update();
-            
-        </script>
-        <style>
-            div {
-                
-                
-                font-family: Cursive;
-                Background-image: linear-gradient(to bottom right, #3d3d3d, black);
-                 width: 1395px;
-                
-                left: -25;
-  border: 15px solid green;
-  padding: 50px;
-  margin: 20px;
-                position: absolute;
-                
-                
-                
-                
-                
-            }
-            button {
-                background-image: linear-gradient(to bottom right, limegreen, green);
-                border: green solid 10px;
-         border-radius: 5px;
-                cursor: pointer;
-                font-family: cursive;
-            }
-      
-            p {
-                color: limegreen;
-            }
-                .big {
-                    font-size: 50px;
-            }
-            marquee {
-                position: absolute;
-                width: 400;
-                border: green solid;
-                    border-radius: 5px;
-            }
-            input {
-                background-image: linear-gradient(to bottom right, green, limegreen);
-                border: none;
-                border-radius:5px;
-                font-family: cursive;
-            }
-            #fx1 {
-             color: purple;
-            }
-
-            </style>
-              
-    </body>
-</html>
+        <p>And yes, school computers can have autoclickers in bookmarks if you have GitHub unblocked.</p>
     </div>
+
+    <script>
+        var dollarValue = parseInt(localStorage.getItem('dollarValue')) || 0;
+        var pcValue = parseInt(localStorage.getItem('pcValue')) || 1;
+
+        function customBuy() {
+            var input1 = parseInt(document.getElementById("input1").value);
+            if (input1 > 0) {
+                buy(input1);
+            }
+        }
+
+        function clickHandler() {
+            dollarValue += pcValue;
+            update();
+            saveData();
+        }
+
+        function buy(a) {
+            var pcCost = (pcValue + 1) * 15;
+            if (dollarValue >= a * pcCost) {
+                dollarValue -= a * pcCost;
+                pcValue += a * 1;
+                update();
+                saveData();
+            }
+        }
+
+        function update() {
+            document.getElementById("dollar-value").innerHTML = dollarValue;
+            document.getElementById("pc-value").innerHTML = pcValue;
+        }
+
+        function saveData() {
+            localStorage.setItem('dollarValue', dollarValue.toString());
+            localStorage.setItem('pcValue', pcValue.toString());
+        }
+
+        update(); // Initialize the display with saved values
+    </script>
+</body>
+</html>
